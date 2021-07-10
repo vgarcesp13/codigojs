@@ -2,16 +2,16 @@ import {useState} from "react" //Controla el estado
 const Navbar = () =>{
     const [user, setUser] = useState(null)
     const login = () => {
-      setUser({id : 1, nombre: " vgarcesp"})
+      setUser({id : 1, nombre: " vgarces_p"})
     }
     const logout= () =>{
       setUser(null)
     }
 
     return(
-      <nav className="navbar navbar-light bg-success bg-gradient">
+      <nav className="navbar navbar-light bg-info bg-gradient">
         <div className="container-fluid">
-          <span className="navbar-brand mb-0 fs-4 text-white">User:{user ? user.nombre : " Usuario No Autentificado"}</span>
+          <span className="navbar-brand mb-0 fs-4 text-white">User:{user ? user.nombre : " El Usuario No Está Autentificado"}</span>
           {user 
           ? ( <button 
                 type="button" 
